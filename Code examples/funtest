@@ -1,0 +1,23 @@
+[This is a special test for functions, functions with
+multiple parameters and stuff like that]
+Add element 1 to the right to element 2 to the right
+in position 2 to the right
+~
+>[>+<-]>
+~
+Set the scene
++++>++>+++<<#
+This should leave 3 0 5
+|#
+
+<++<#
+This should leave 0 2 5
+/#
+
++++#
+This should leave 2 2 5
+/\#
+
++#
+This should leave 7 2 5
+/\\#
