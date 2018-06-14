@@ -49,7 +49,7 @@ object Operation {
       case '/' => {
         reader.nextCh
         var args = 0
-        if(reader.peek == '\\')
+        if(reader.nonEmpty && reader.peek == '\\')
           args = amalgamate(reader)
         new SpecialFunOp(args)
       }
