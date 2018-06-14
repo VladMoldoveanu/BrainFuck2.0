@@ -44,7 +44,9 @@ Examples can be found in the files provided. To run those files, the compile ord
 
 **Features:** all arrays are infinite-dimensional and support negative points. The number of functions is uncapped. 
 
-**Performance improvement:** multiple operations of the same kind are compiled together into a single operation. For example `+++++>>>---` is stored as `add 5`, `move right 3`, `subs 3`. Loops and function calls are not stored together: `++++[-->>]` compiles to `add 4`, `loop(subs 2, move right 2)`.
+**Performance improvement:** 
+* Multiple operations of the same kind are compiled together into a single operation. For example `+++++>>>---` is stored as `add 5`, `move right 3`, `subs 3`. Loops and function calls are not stored together: `++++[-->>]` compiles to `add 4`, `loop(subs 2, move right 2)`.
+* The `[-]` loop is transformed to a `set 0` operation, so it will work even for negative values
 
 ## Command Line Interpreter
 To issue a Debug command, the `#` or `##` have to be on a separate line
