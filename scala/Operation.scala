@@ -109,3 +109,7 @@ object EmptyOp extends Operation {
 object Debug extends Operation {
   override def execute(ah: ArrayHandler): Unit = ah.printData()
 }
+
+object SetZero extends Operation{
+  override def execute(ah: ArrayHandler): Unit = ah.update(0)
+}

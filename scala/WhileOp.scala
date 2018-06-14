@@ -7,6 +7,11 @@ class WhileOp(ops: List[Operation]) extends Operation {
 
 object WhileOp {
   def create(reader: Read) : Operation = {
+    if(reader.hasTwo && reader.peekTwo == ('-',']')) {
+      reader.nextCh
+      reader.nextCh
+      return SetZero
+    }
     var ops: List[Operation] = List()
     while(reader.nonEmpty && reader.peek != ']' && reader.peek != '~')
       ops = Operation.dispatch(reader) :: ops

@@ -48,7 +48,7 @@ object CmdLoop {
             cmd = cmd.tail
             for(file <- cmd.split(' ')) {
               CompileRun.compile(file)
-              CompileRun.execute()
+              Timer.timeIf(timed)(CompileRun.execute())
             }
           }
         }

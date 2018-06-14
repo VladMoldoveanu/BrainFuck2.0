@@ -7,7 +7,7 @@ class Reader(filename: String) extends Read {
   if(commands.head == '[') {
     while (commands.nonEmpty && commands.head != ']')
       commands = commands.tail
-    commands = commands.tail
+    if(commands.nonEmpty) commands = commands.tail
   }
   commands = commands.filter(_valid.contains(_))
   def nextCh : Char = {
@@ -18,4 +18,6 @@ class Reader(filename: String) extends Read {
   def peek : Char = commands.head
   def nonEmpty: Boolean = commands.nonEmpty
   def isEmpty: Boolean = commands.isEmpty
+  override def hasTwo: Boolean = commands.nonEmpty && commands.tail.nonEmpty
+  override def peekTwo: (Char, Char) = (commands.head, commands.tail.head)
 }
