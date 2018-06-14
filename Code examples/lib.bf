@@ -30,3 +30,23 @@ Cursor end point: @2
     ]
     >>
 ~
+
+Function 3: Digit @1 to char @1
+Cursor end point: @1
+~
+    >++++++++++++++++++++++++++++++++++++++++++++++++
+~
+
+Function 4: Character at @1 to lowercase char at @1
+Cursor end point: @1
+~
+    >++++++++++++++++++++++++++++++++++++++++++++++++++
+    +++++++++++++++++++++++++++++++++++++++++++++++
+~
+
+Function 5: Character at @1 to uppercase char at @1
+Cursor end point: @1
+~
+    >++++++++++++++++++++++++++++++++++++++++++++++++++
+    +++++++++++++++
+~
