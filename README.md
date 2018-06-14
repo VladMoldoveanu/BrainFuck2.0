@@ -42,7 +42,7 @@ Examples can be found in the files provided. To run those files, the compile ord
 
 **Running:** operations are executed in the order in which they were inserted in the queue. There are options to time the run, but not the compile.
 
-**Reading characters:** characters are sent to the program only after typing the `\\n` character. The input received does not contain the `\\n` character. Sending an empty line will result in the number 0 being sent to the array - useful for signaling the end of the input.
+**Reading characters:** characters are sent to the program only after typing the `\n` character. The input received does not contain the `\n` character. Sending an empty line will result in the number 0 being sent to the array - useful for signaling the end of the input.
 
 **Features:** all arrays are infinite-dimensional and support negative points. The number of functions is uncapped. 
 
