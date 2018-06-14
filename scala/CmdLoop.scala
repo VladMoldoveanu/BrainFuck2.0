@@ -12,8 +12,6 @@ object CmdLoop {
                         ":t => toggle timer\n" +
                         ":s [filename] => toggle saving to file\n" +
                         "type expressions to evaluate\n" +
-                        "type [ to start a while loop - no other characters in the row\n" +
-                        "type ] to finish creating the loop and execute it\n" +
                         "type ~ to start building functions - no other characters in the row\n" +
                         "type ~ to finish building a function\n" +
                         "type # for pointer location and number of functions\n" +
