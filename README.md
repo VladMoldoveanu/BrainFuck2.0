@@ -1,6 +1,8 @@
 # BrainFuck2.0
 Scala Interpreter for Brainfuck with added functions
 
+More advenced Brainfuck interpreter with stack, functions and more code optimisations written in rust [here](https://github.com/VladMoldoveanu/Brainfuck_stack-and-functions).
+
 ## Using the Interpreter
 **Compile** all the files with `scalac` or `fsc`.
 
